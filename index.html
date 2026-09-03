@@ -26,6 +26,7 @@
             color: white;
             padding: 45px 20px;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
@@ -36,6 +37,33 @@
         header p {
             font-size: 1.05rem;
             color: #dbe7ff;
+        }
+
+        /* Raahat Varma Logo */
+        .logo {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            z-index: 20;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2196f3, #90caf9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
         }
 
         nav {
@@ -73,243 +101,3 @@
         }
 
         .intro {
-            font-size: 1.15rem;
-            color: #455a64;
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            color: #0f3460;
-            margin: 30px 0 12px;
-        }
-
-        h3 {
-            color: #16213e;
-            margin: 20px 0 8px;
-        }
-
-        ul, ol {
-            margin: 12px 0 20px 25px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .tip {
-            background: #e8f4ff;
-            border-left: 5px solid #2196f3;
-            padding: 18px;
-            margin: 25px 0;
-            border-radius: 6px;
-        }
-
-        .warning {
-            background: #fff4e5;
-            border-left: 5px solid #ff9800;
-            padding: 18px;
-            margin: 25px 0;
-            border-radius: 6px;
-        }
-
-        .steps {
-            background: #f8f9fc;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        footer {
-            text-align: center;
-            background: #16213e;
-            color: white;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 5px 0;
-            color: #dbe7ff;
-        }
-
-        .author {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #90caf9;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.9rem;
-            }
-
-            article {
-                padding: 22px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px 8px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>How to Contact Satellite Radio Support</h1>
-        <p>A simple educational guide for getting help with your satellite radio service</p>
-    </header>
-
-    <nav>
-        <a href="#support">Support Options</a>
-        <a href="#prepare">Before Contacting</a>
-        <a href="#issues">Common Issues</a>
-        <a href="#tips">Helpful Tips</a>
-    </nav>
-
-    <main>
-        <article>
-
-            <p class="intro">
-                Satellite radio is a convenient way to enjoy music, news, sports, podcasts,
-                and entertainment in your vehicle or on compatible devices. If you experience
-                an account, subscription, receiver, or service problem, contacting the
-                provider's official customer support is usually the best place to start.
-            </p>
-
-            <h2 id="support">Ways to Contact Satellite Radio Support</h2>
-
-            <p>
-                Satellite radio providers generally offer several support methods. The exact
-                options can vary depending on the provider and your location.
-            </p>
-
-            <div class="steps">
-                <h3>1. Visit the Official Support Website</h3>
-                <p>
-                    Start by visiting your satellite radio provider's official website.
-                    Look for sections labeled <strong>Help</strong>, <strong>Support</strong>,
-                    <strong>Contact Us</strong>, or <strong>Customer Care</strong>.
-                </p>
-
-                <h3>2. Use Online Chat</h3>
-                <p>
-                    Some providers offer live chat with a support representative. Online chat
-                    can be useful for questions about accounts, subscriptions, billing, and
-                    basic technical problems.
-                </p>
-
-                <h3>3. Contact Customer Service by Phone</h3>
-                <p>
-                    If your issue is urgent or requires account verification, you may be able
-                    to contact customer service by telephone. Always obtain the phone number
-                    from the provider's official website or your official account information.
-                </p>
-
-                <h3>4. Check the Help Center</h3>
-                <p>
-                    Many common problems have step-by-step solutions in an online help center.
-                    Checking these articles can sometimes resolve an issue without waiting
-                    for a support representative.
-                </p>
-            </div>
-
-            <h2 id="prepare">Information to Prepare Before Contacting Support</h2>
-
-            <p>
-                Having the relevant information ready can make a support conversation faster
-                and easier.
-            </p>
-
-            <ul>
-                <li>Your account email address or username</li>
-                <li>The name associated with the account</li>
-                <li>Your radio or receiver information, if applicable</li>
-                <li>Details about your subscription or service plan</li>
-                <li>A description of the problem</li>
-                <li>Any error messages displayed on your device</li>
-                <li>Relevant billing information, if the issue concerns a payment</li>
-            </ul>
-
-            <div class="tip">
-                <strong>Tip:</strong> Avoid posting passwords, full payment-card numbers,
-                security codes, or other sensitive account information publicly. Only provide
-                sensitive information through the provider's verified support channels when
-                necessary.
-            </div>
-
-            <h2 id="issues">Common Satellite Radio Support Issues</h2>
-
-            <h3>Subscription Problems</h3>
-            <p>
-                If your subscription is not active, has expired, or is showing the wrong
-                status, check your account first. If the information appears incorrect,
-                contact the provider through its official support channel.
-            </p>
-
-            <h3>Radio or Receiver Problems</h3>
-            <p>
-                If your radio is not receiving a signal, check that the device is powered on
-                and that you are in an area where the service can normally be received.
-                Follow the provider's official troubleshooting instructions before contacting
-                support.
-            </p>
-
-            <h3>Billing Questions</h3>
-            <p>
-                For unexpected charges or questions about payments, review your account's
-                billing information and contact the provider directly if something appears
-                incorrect.
-            </p>
-
-            <h3>Activation Problems</h3>
-            <p>
-                New or replacement radios may require activation. Follow the activation
-                instructions supplied by the provider and make sure the receiver information
-                is entered correctly.
-            </p>
-
-            <h2 id="tips">Tips for Getting Better Support</h2>
-
-            <ol>
-                <li>Use only official support channels.</li>
-                <li>Clearly explain what happened and when the problem started.</li>
-                <li>Have your account or device information available.</li>
-                <li>Write down any case or reference number provided by support.</li>
-                <li>Follow troubleshooting instructions carefully.</li>
-                <li>Never share your password or sensitive financial information in public forums.</li>
-            </ol>
-
-            <div class="warning">
-                <strong>Important:</strong> Be careful with websites or phone numbers claiming
-                to provide satellite radio support. For account and billing matters, verify
-                that you are using the satellite radio provider's official website or an
-                officially listed support channel.
-            </div>
-
-            <h2>Conclusion</h2>
-
-            <p>
-                Contacting satellite radio support does not have to be complicated. Start with
-                the provider's official help center or support website, gather your account and
-                device information, and clearly describe the issue. For account, billing, or
-                technical problems that cannot be solved through self-service options, use the
-                provider's verified customer-service channel.
-            </p>
-
-            <p class="author">
-                Written by Raahat Varma
-            </p>
-
-        </article>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Raahat Varma. All rights reserved.</p>
-        <p>Educational information about satellite radio support.</p>
-    </footer>
-
-</body>
-</html>
